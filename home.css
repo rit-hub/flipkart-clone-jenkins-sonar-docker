@@ -103,9 +103,9 @@ nav .right ul li a {
 }
 
 main {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
-
+  align-items: center;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
@@ -141,8 +141,7 @@ main {
 }
 .option__item img {
   position: relative;
-
-  height: 60%;
+  height: 35px;
 }
 .option__item p {
   color: black;
@@ -180,13 +179,15 @@ main {
 }
 
 .footer {
-  height: 5vh;
+  height: 10vh;
+  background-color: #172337;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #172337;
-  position: relative;
+  left: 0;
   bottom: 0;
+  width: 100%;
+  text-align: center;
   color: antiquewhite;
 }
 .color {
@@ -197,4 +198,89 @@ main {
 .footer p {
   margin: 0;
   padding: 0;
+}
+
+/***********************Products***********************/
+
+.products {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 1500px;
+  height: 50vh;
+  margin: 5px 5px 5px 5px;
+  /* background-color: red; */
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  /* border-bottom: 1px solid black; */
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  background-color: white;
+}
+
+.product__title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid wheat;
+  /* background-color: aqua; */
+  padding: 5px 5px 5px 5px;
+}
+.title__heading {
+  display: flex;
+  flex-direction: column;
+}
+.title__heading p {
+  margin: 0;
+  padding: 0;
+}
+.title__button {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.title__button button {
+  background-color: #004a7a;
+  color: white;
+  font-weight: 200;
+  padding: 1px 5px 1px 5px;
+  border-radius: 5px;
+}
+.product__row {
+  display: flex;
+  /* background-color: yellow; */
+  justify-content: space-evenly;
+}
+.product__card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  justify-content: space-evenly;
+  padding: 5px 5px 5px 5px;
+}
+.product__image {
+  height: 60%;
+  width: 50%;
+  align-self: center;
+  /* background-color: turquoise; */
+}
+.card__content {
+  /* background-color: teal; */
+  height: 30%;
+}
+.card__content p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.space {
+  height: 50vh;
+  width: 100%;
+}
+
+.heading__title {
+  font-weight: bold;
+  color: rgb(41, 40, 40);
 }
